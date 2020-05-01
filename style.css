@@ -3,10 +3,12 @@
 	width: 100%;
 }
 
+
 .navbar{
 	background-color: #23415c;
 	padding: 1% 0;
 	font-size: 1.2em;
+	
 }
 
 .navbar-brand{
@@ -25,13 +27,18 @@
 }
 
 #home {
-	background: url(img/E.jpg) no-repeat center fixed;
+	background: url(./Assets/img//E.jpg) no-repeat center fixed;
 	display: table;
 	height:100%;
-	position: relative;
 	width: 100%;
+	background-color: teal;
 	background-size: cover;
 	padding-top: 50px;
+	
+}
+
+#back {
+
 }
 
 .landing-text{
@@ -53,15 +60,44 @@
 width: 100%;
 }
 
+.videoBgWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.videoBg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 #fixed {
-background: url(./img/Street\ flick.jpeg) no-repeat center center fixed;
+background: url(./Assets/img/Street\ flick.jpeg) no-repeat center center fixed;
 display: table;
 height: 60%;
 position: relative;
 width: 100%;
 background-size: cover ;
+
 }
 
+#fixedd {
+	background: url(./Assets/img/Lawd.jpeg) no-repeat center center fixed;
+	display: table;
+	height: 60%;
+	background-position: auto;
+	position: relative;
+	width: 100%;
+	background-size: cover 
+	}
 footer {
 	width: 100%;
 	background-color: #23415c;
@@ -83,6 +119,15 @@ text-decoration: none;
 .icon{
 	max-width: 200px;
 }
+
+@media only screen and (max-width: 768px) {
+	video {
+	  display:none;
+	}
+	body{
+	  background-image:url(“image.png”);
+	}
+   }
 
 @media (max-width: 768px) {
 	.landing-text h1 {
