@@ -1,6 +1,8 @@
 ﻿html, body {
 	height: 100%;
 	width: 100%;
+	background-color: #232526 , 
+	#414345;
 }
 
 
@@ -26,19 +28,61 @@
 	
 }
 
+.first {
+	background-color: ;
+}
+.wrapper {
+	position: relative;
+	background-color: black;
+	height: 75vh;
+	min-height: 25rem;
+	width: 100%;
+	overflow: hidden;
+	background-size: cover;
+  }
+  .wrapper video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+  }
+
+  .wrapper  {
+	position: relative;
+	z-index: 2;
+  }
+
+
 #home {
-	background: url(./Assets/img//E.jpg) no-repeat center fixed;
+	/* background: url(./Assets/img/E.jpg) no-repeat center fixed; */
+	background: url(./Assets/Video/IF\ outrointro\ .mp4) no-repeat center fixed;		
 	display: table;
 	height:100%;
 	width: 100%;
-	background-color: teal;
+	
 	background-size: cover;
-	padding-top: 50px;
+	padding-top: 100px;
+	position: relative;
+	top: 10px;
+	
 	
 }
 
-#back {
+.second {
+	backdrop-filter: blur(50);
+}
 
+.row {
+	backdrop-filter: grayscale(1);
+	filter: grayscale(100%);
 }
 
 .landing-text{
@@ -53,11 +97,16 @@
 }
 
 .padding {
-	padding: 80px 0;
+	padding: 80px 0px;
+	
+	opacity: 0.3;
+
+filter: (opacity=30);
 }
 
 .padding img {
 width: 100%;
+
 }
 
 .videoBgWrapper {
@@ -80,23 +129,31 @@ width: 100%;
 
 
 #fixed {
-background: url(./Assets/img/Street\ flick.jpeg) no-repeat center center fixed;
+background: url(./Assets/img/Lawd.jpeg) no-repeat center center fixed;
 display: table;
 height: 60%;
 position: relative;
 width: 100%;
 background-size: cover ;
-
+margin-top: auto;
+margin-right: auto;
+margin-bottom: auto;
+margin-left: auto;
+background-position: center center;
 }
 
 #fixedd {
-	background: url(./Assets/img/Lawd.jpeg) no-repeat center center fixed;
+	background: url(./Assets/img/Street\ flick.jpeg) no-repeat center center fixed;
 	display: table;
 	height: 60%;
 	background-position: auto;
 	position: relative;
 	width: 100%;
 	background-size: cover 
+	}
+
+	#fixedddd {
+		background-image: url(./Assets/Video/IF\ outrointro\ .mp4);
 	}
 footer {
 	width: 100%;
